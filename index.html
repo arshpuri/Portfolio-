@@ -20,16 +20,16 @@
     <style>
         :root {
             /* Exciting Dark Palette */
-            --bg-color: #050505;
-            --bg-secondary: rgba(20, 20, 25, 0.6);
-            --card-border: rgba(255, 255, 255, 0.08);
+            --bg-color: #020813;
+            --bg-secondary: rgba(10, 22, 45, 0.6);
+            --card-border: rgba(255, 215, 0, 0.15);
             --text-primary: #ffffff;
-            --text-secondary: #a0a5b5;
+            --text-secondary: #b3c5d6;
 
-            /* Vibrant Gradients & Accents */
-            --color-accent: #00e5ff;
-            --color-accent-2: #b700ff;
-            --color-accent-3: #ff007f;
+            /* Vibrant Gradients & Accents - Blue & Yellow theme */
+            --color-accent: #ffd700;
+            --color-accent-2: #00aaff;
+            --color-accent-3: #ffb300;
 
             --gradient-primary: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
             --gradient-text: linear-gradient(to right, var(--color-accent), var(--color-accent-2), var(--color-accent-3));
@@ -72,7 +72,7 @@
             width: 50vw;
             height: 50vw;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
+            background: radial-gradient(circle, rgba(0, 170, 255, 0.15) 0%, rgba(0, 0, 0, 0) 60%);
             z-index: -1;
             filter: blur(80px);
             animation: float 15s infinite alternate ease-in-out;
@@ -86,7 +86,7 @@
             width: 60vw;
             height: 60vw;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(183, 0, 255, 0.1) 0%, rgba(0, 0, 0, 0) 60%);
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0) 60%);
             z-index: -1;
             filter: blur(100px);
             animation: float-rev 20s infinite alternate ease-in-out;
@@ -811,6 +811,7 @@
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Work</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -838,6 +839,10 @@
                 <a href="https://www.linkedin.com/in/arsh-puri/" target="_blank" rel="noopener noreferrer"
                     class="btn btn-secondary">
                     <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i> LinkedIn
+                </a>
+                <a href="https://codolio.com/profile/arshpuri" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary">
+                    <i data-lucide="code" style="width: 18px; height: 18px;"></i> Codolio
                 </a>
             </div>
         </div>
@@ -1057,6 +1062,25 @@
                     <li>Agentic Workflows</li>
                     <li>Sales & Outreach</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2 class="section-header fade-in">Certifications</h2>
+        <div class="fade-in" style="display: flex; gap: 2.5rem; flex-wrap: wrap; align-items: center; background: var(--bg-secondary); padding: 3rem; border-radius: 24px; border: 1px solid var(--card-border); position: relative; overflow: hidden; backdrop-filter: blur(10px);">
+            <!-- Decorative background element for the card -->
+            <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%); filter: blur(30px);"></div>
+            <div style="flex-shrink: 0; position: relative; z-index: 1;">
+                <img src="./aws-certified-developer-associate.png" alt="AWS Certified Developer Associate" style="width: 160px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(255, 215, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);" />
+            </div>
+            <div style="position: relative; z-index: 1; flex: 1; min-width: 300px;">
+                <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--text-primary);">AWS Certified Developer – Associate</h3>
+                <p style="color: var(--color-accent); font-family: var(--font-display); font-size: 0.95rem; margin-bottom: 1.5rem; letter-spacing: 1px; text-transform: uppercase;">Amazon Web Services</p>
+                <p style="color: var(--text-secondary); max-width: 600px; line-height: 1.6;">
+                    Validated expertise in developing, deploying, and debugging cloud-based applications using AWS. Proficient in core AWS services, uses, and basic AWS architecture best practices, with a focus on writing code that interacts securely with cloud infrastructure.
+                </p>
             </div>
         </div>
     </section>
